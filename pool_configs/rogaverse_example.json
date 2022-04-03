@@ -1,0 +1,51 @@
+{
+    "enabled": true,
+    "coin": "rogaverse.json",
+
+    "address": "R9MQ94Lz3GsSaJszKY1WQ5Cn4x1CegufE8",
+
+    "rewardRecipients": {
+        "RP5yqkgGr6iz5pd1uxsPpdo8kwbWm6JWqM": 2
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 0.1,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 12345,
+            "user": "user",
+            "password": "pass"
+        }
+    },
+
+    "ports": {
+        "3333": {
+            "diff": 8,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 42069,
+        "disableTransactions": true
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 12345,
+            "user": "user",
+            "password": "pass"
+        }
+    ]
+}
